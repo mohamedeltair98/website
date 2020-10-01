@@ -1,482 +1,562 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Zahn-Zone</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Zahn-Zone</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 
-    <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/aos.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-  
-  <div class="site-wrap"  id="home-section">
+  <link rel="stylesheet" href="css/style.css">
 
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+  <style>
+    .switch-lang {
+      width: 110px;
+      text-align: left;
+      cursor: pointer;
+      z-index: 50;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .switch-lang:hover .lang-dropdown {
+      display: block;
+    }
+    .switcher-link {
+      color: #fff;
+    }
+    .switcher-link:hover {
+      color: #fff;
+    }
+    .current-lang {
+      background: #34495e;
+      padding: 3px 5px 0px 5px;
+      border-radius: 5px;
+    }
+    .lang-flag {
+      width: 20px;
+      display: inline-block;
+    }
+    .lang-text {
+      display: inline-block;
+      margin-left: 5px;
+      vertical-align: top;
+      margin-top: 2px;
+    }
+    .lang-dropdown {
+      display: none;
+      background: #34495e;
+      border-radius: 5px;
+      margin-top: 2px;
+    }
+    .selecting-lang {
+      padding: 3px 5px 3px 5px;
+      cursor: pointer;
+    }
+    .selecting-lang:hover {
+      background: #22313f;
+    }
+    ul > :first-child {
+      border-radius: 5px 5px 0px 0px;
+    }
+    ul > :last-child {
+      border-radius: 0px 0px 5px 5px;
+    }
+    li {
+      list-style-type: none;
+    }
+    .menu-arrow {
+      display: inline-block;
+      width: 10px;
+      margin-left: 10px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
+  </style>
+
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+<div class="site-wrap"  id="home-section">
+
+  <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"></span>
       </div>
-      <div class="site-mobile-menu-body"></div>
     </div>
-   
-      
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <div class="site-mobile-menu-body"></div>
+  </div>
 
-      <div class="container">
-        <div class="row align-items-center position-relative">
-          
-            
-            <div class="site-logo">
-              <a href="index.html" class="text-black"><span class="text-primary">Zahn-</span>Zone</a>
-            </div>
-            
-            <div class="col-12">
-              <nav class="site-navigation text-center " role="navigation">
 
-                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                <li><a href="#home-section" class="nav-link">Home</a></li>
-                <li><a href="#services-section" class="nav-link">Treatments</a></li>
-                <li><a href="#about-section" class="nav-link">About us</a></li>
-                <li><a href="#team-section" class="nav-link">Team</a></li>
-                
-<!--                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>-->
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-              </ul>
-              </nav>
-          
-            </div>
+  <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
-          <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+    <div class="container">
+      <div class="row align-items-center position-relative">
+
+
+        <div class="site-logo">
+          <a href="index.html" class="text-black"><span class="text-primary">Zahn-</span>Zone</a>
+        </div>
+
+        <div class="col-12">
+          <nav class="site-navigation text-center " role="navigation">
+
+            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+              <li><a href="#home-section" class="nav-link">Home</a></li>
+              <li><a href="#services-section" class="nav-link">Treatments</a></li>
+              <li><a href="#about-section" class="nav-link">About us</a></li>
+              <li><a href="#team-section" class="nav-link">Team</a></li>
+
+              <!--                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>-->
+              <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              <div class="switch-lang">
+                <div class=""><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>
+                  <a href="index_en.html" class="lang-text">English</a>
+                </div>
+
+
+                <div class="lang-dropdown">
+                  <!--                    <div class="selecting-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Italy.png"/>-->
+                  <!--                      <p class="lang-text">Italiano</p>-->
+                  <!--                    </div>-->
+                  <div class="selecting-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Germany.png"/>
+                    <a href="index.html" class="lang-text">Deutsch</a>
+                  </div>
+
+
+                </div>
+            </ul>
+          </nav>
 
         </div>
-      </div>
-      
-    </header>
-    
 
-    <div class="site-section-cover img-bg-section" style="background-image: url('images/zz_new_logo.png'); background-repeat: no-repeat;
+        <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <div class="site-section-cover img-bg-section" style="background-image: url('images/zz_new_logo.png'); background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;" data-aos="fade">
-      
-<!--      <div class="container">-->
-<!--        <div class="row align-items-center">-->
-<!--          <div class="col-lg-5">-->
 
-<!--            <div class="box-shadow-content">-->
-<!--              <div class="block-heading-1">-->
-<!--                <span class="d-block mb-3"  data-aos="fade-up">Herzlich willkommen in Zahn Zone</span>-->
-<!--                <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">We Care For Your Smile</h1>-->
-<!--              </div>-->
-<!--              -->
-<!--              <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Unser Ziel ist es, Ihre Lebensfreude durch die Gesundheit und Schönheit Ihrer Zähne zu steigern.</p>-->
-<!--              <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary text-white py-3 px-5">Kontaktieren Sie uns</a></p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-      <h1 style="text-align: center; color: #000">Welcome</h1>
-      <!-- <div class="img-absolute">
-        <img src="images/person-transparent-2.png" alt="Image" class="img-fluid">
-      </div> -->
-    </div>
+    <!--      <div class="container">-->
+    <!--        <div class="row align-items-center">-->
+    <!--          <div class="col-lg-5">-->
+
+    <!--            <div class="box-shadow-content">-->
+    <!--              <div class="block-heading-1">-->
+    <!--                <span class="d-block mb-3"  data-aos="fade-up">Herzlich willkommen in Zahn Zone</span>-->
+    <!--                <h1 class="mb-4" data-aos="fade-up" data-aos-delay="100">We Care For Your Smile</h1>-->
+    <!--              </div>-->
+    <!--              -->
+    <!--              <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Unser Ziel ist es, Ihre Lebensfreude durch die Gesundheit und Schönheit Ihrer Zähne zu steigern.</p>-->
+    <!--              <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary text-white py-3 px-5">Kontaktieren Sie uns</a></p>-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </div>-->
+    <!--      <h1 style="text-align: center; color: #000">Herzlich willkommen</h1>-->
+    <!-- <div class="img-absolute">
+      <img src="images/person-transparent-2.png" alt="Image" class="img-fluid">
+    </div> -->
+  </div>
 
 
 
-    <div class="site-section block-feature-1-wrap" id="services-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="block-heading-1">
-              <span>All Kind Of Services</span>
-              <h2>Treatments</h2>
-            </div>
+  <div class="site-section block-feature-1-wrap" id="services-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="block-heading-1">
+            <span>All Kind Of Services</span>
+            <h2>Treatments</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
-            <div class="block-feature-1">
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+          <div class="block-feature-1">
               <span class="icon">
                 <span class="flaticon-dentist"></span>
               </span>
-              <h2 class="text-black">ZAHNIMPLANTATE</h2>
-              <p>In unserer Zahnarztpraxis in Bogenhausen,München,bieten wir Ihnen verschiedenste Implantatgrößen und varianten, die eine optimale Wiederherstellung des natürlichen Gebisses ermöglichen. </p>
-            </div>
+            <h2 class="text-black">DENTAL PLANTS</h2>
+            <p>In our dental practice in Bogenhausen, Munich, we offer you a wide range of implant sizes and variants, which enable an optimal restoration of the natural dentition.</p>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="block-feature-1">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="block-feature-1">
               <span class="icon">
                 <span class="flaticon-dental-care"></span>
               </span>
-              <h2 class="text-black">WURZELKANALBEHANDLUNG</h2>
-              <p>Nach kariösen Befall eines Zahnes oder auch durch einen Unfall kann es zu einer Entzündung der Zahnnerven kommen. Die einzige Möglichkeit, den erkrankten Zahn zu erhalten, ist die Wurzelkanalbehandlung, auch endodontische Behandlung genannt.
-            </div>
+            <h2 class="text-black">WURZELKANALBEHANDLUNG</h2>
+            <p>Nach kariösen Befall eines Zahnes oder auch durch einen Unfall kann es zu einer Entzündung der Zahnnerven kommen. Die einzige Möglichkeit, den erkrankten Zahn zu erhalten, ist die Wurzelkanalbehandlung, auch endodontische Behandlung genannt.
           </div>
-
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="block-feature-1">
-              <span class="icon">
-                <span class="flaticon-dental-1"></span>
-              </span>
-              <h2 class="text-black">KIEFERORTHOPÄDIE</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit quo quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
-            <div class="block-feature-1">
-              <span class="icon">
-                <span class="flaticon-baby"></span>
-              </span>
-              <h2 class="text-black">KINDERZAHNHEILKUNDE</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit quo quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <div class="block-feature-1">
+        </div>
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="100">
+          <div class="block-feature-1">
               <span class="icon">
                 <span class="flaticon-tooth"></span>
               </span>
-              <h2 class="text-black">PROFESSIONELLE ZAHNREINIGUNG</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit quo quae</p>
-            </div>
+            <h2 class="text-black">PROFESSIONELLE ZAHNREINIGUNG</h2>
+            <p>Die Professionelle Zahnreinigung (PZR) ist ein Hauptbestandteil der Zahnmedizinischen Prophylaxe. Man versteht darunter eine umfassende mechanische Reinigung der Zähne, die die Defizite der täglichen Mundhygiene beseitigt.</p>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
-            <div class="block-feature-1">
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="block-feature-1">
               <span class="icon">
                 <span class="flaticon-dental"></span>
               </span>
-              <h2 class="text-black">ÄSTHETISCHE ZAHNHEILKUNDE</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum suscipit quo quae</p>
+            <h2 class="text-black">ÄESTHETICH ZAHNHEILKUNDE</h2>
+            <p>Ästhetische Probleme und Defekte der Zähne gehen oft nahtlos ineinander über. Eine abgesplitterte Kante oder eine alte Füllung sieht nicht nur unschön aus, sondern macht den Zahn auch besonders anfällig für weitere Schäden. Mit die Hilfe von der Z.B Veeners oder Inlays. können die Zähne „unsichtbar“ wiederhergestellt werden.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up" data-aos-delay="200">
+          <div class="block-feature-1">
+              <span class="icon">
+                <span class="flaticon-dental-1"></span>
+              </span>
+            <h2 class="text-black">KIEFERORTHOPÄDIE</h2>
+            <p>Invisalign - Die unsichtbare Zahnspange.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-5" data-aos="fade-up">
+          <div class="block-feature-1">
+              <span class="icon">
+                <span class="flaticon-baby"></span>
+              </span>
+            <h2 class="text-black">KINDERZAHNHEILKUNDE</h2>
+            <p>Die Kinderzahnheilkunde umfasst alle Behandlungen zur Gesunderhaltung der Zähne bei Kindern und Jugendlichen.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="site-section gradient-bg-1" id="about-section">
+    <div class="container">
+      <!--        <div class="row justify-content-center mb-4 block-img-video-1-wrap">-->
+      <!--          <div class="col-8 mb-5">-->
+      <!--            <figure class="block-img-video-1" data-aos="fade">-->
+      <!--              <a href="https://vimeo.com/45830194" class="popup-vimeo">-->
+      <!--                <span class="icon"><span class="icon-play"></span></span>-->
+      <!--                <img src="images/img-video-1.jpg" alt="Image" class="img-fluid">-->
+      <!--              </a>-->
+      <!--            </figure>-->
+      <!--          </div>-->
+      <!--        </div>-->
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
+              <div class="block-counter-1">
+                <span class="number"><span data-number="15">0</span>+</span>
+                <span class="caption">Erfahrungen</span>
+              </div>
+            </div>
+            <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
+              <div class="block-counter-1">
+                <span class="number"><span data-number="2">0</span>+</span>
+                <span class="caption">Spezialisten Zahnärzte</span>
+              </div>
+            </div>
+            <!--              <div class="col-md-6 mb-4 col-lg-0 col-lg-3">-->
+            <!--                <div class="block-counter-1">-->
+            <!--                  <span class="number"><span data-number="320">0</span>+</span>-->
+            <!--                  <span class="caption">Health Sections</span>-->
+            <!--                </div>-->
+            <!--              </div>-->
+            <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
+              <div class="block-counter-1">
+                <span class="number"><span data-number="1500">0</span>+</span>
+                <span class="caption">Happy Smiles</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-
-    <div class="site-section gradient-bg-1" id="about-section">
-      <div class="container">
-<!--        <div class="row justify-content-center mb-4 block-img-video-1-wrap">-->
-<!--          <div class="col-8 mb-5">-->
-<!--            <figure class="block-img-video-1" data-aos="fade">-->
-<!--              <a href="https://vimeo.com/45830194" class="popup-vimeo">-->
-<!--                <span class="icon"><span class="icon-play"></span></span>-->
-<!--                <img src="images/img-video-1.jpg" alt="Image" class="img-fluid">-->
-<!--              </a>-->
-<!--            </figure>-->
-<!--          </div>-->
-<!--        </div>-->
-        <div class="row">
-          <div class="col-12">
-            <div class="row">
-              <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
-                <div class="block-counter-1">
-                  <span class="number"><span data-number="15">0</span>+</span>
-                  <span class="caption">Years of Experience</span>
-                </div>
-              </div>
-              <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
-                <div class="block-counter-1">
-                  <span class="number"><span data-number="2">0</span>+</span>
-                  <span class="caption">Specialized Dentists</span>
-                </div>
-              </div>
-<!--              <div class="col-md-6 mb-4 col-lg-0 col-lg-3">-->
-<!--                <div class="block-counter-1">-->
-<!--                  <span class="number"><span data-number="320">0</span>+</span>-->
-<!--                  <span class="caption">Health Sections</span>-->
-<!--                </div>-->
-<!--              </div>-->
-              <div class="col-md-6 mb-4 col-lg-0 col-lg-4">
-                <div class="block-counter-1">
-                  <span class="number"><span data-number="1500">0</span>+</span>
-                  <span class="caption">Happy Smiles</span>
-                </div>
-              </div>
-            </div>
+  <div class="site-section" id="team-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="block-heading-1">
+            <span>Spezialisten Zahnärzte</span>
+            <h2>Meet Our Team</h2>
           </div>
         </div>
       </div>
-    </div>
+      <div class="row">
 
-    <div class="site-section" id="team-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-12">
-            <div class="block-heading-1">
-              <span>Specialized Dentists</span>
-              <h2>Meet Our Team</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
-            <div class="block-team-member-1 text-center rounded">
-              <a href="karl.html">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+          <div class="block-team-member-1 text-center rounded">
+            <a href="karl.html">
               <figure>
                 <img src="images/doc_person_2.jpg" alt="Image" class="img-fluid rounded-circle">
               </figure>
               <h3 class="font-size-20 text-black">Z.A Karl Sochurek</h3>
-<!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Doctor</span>-->
-<!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia veritatis, nam quam obcaecati fuga.</p>-->
-<!--              <div class="block-social-1">-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
-<!--              </div>-->
-              </a>
-            </div>
+              <!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Doctor</span>-->
+              <!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia veritatis, nam quam obcaecati fuga.</p>-->
+              <!--              <div class="block-social-1">-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
+              <!--              </div>-->
+            </a>
           </div>
+        </div>
 
 
-          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
-            <div class="block-team-member-1 text-center rounded">
-              <a href="mohamed.html">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+          <div class="block-team-member-1 text-center rounded">
+            <a href="mohamed.html">
               <figure>
                 <img src="images/doc_person_1.jpg" alt="Image" class="img-fluid rounded-circle">
               </figure>
               <h3 class="font-size-20 text-black">Z.A Dr. Mohamed Eltair</h3>
-<!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Doctor</span>-->
-<!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, repellat. At, soluta. Repellendus vero, consequuntur!</p>-->
-<!--              <div class="block-social-1">-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
-<!--              </div>-->
-              </a>
-            </div>
+              <!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Doctor</span>-->
+              <!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, repellat. At, soluta. Repellendus vero, consequuntur!</p>-->
+              <!--              <div class="block-social-1">-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
+              <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
+              <!--              </div>-->
+            </a>
           </div>
-
-<!--          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">-->
-<!--            <div class="block-team-member-1 text-center rounded">-->
-<!--              <figure>-->
-<!--                <img src="images/doc_person_3.jpg" alt="Image" class="img-fluid rounded-circle">-->
-<!--              </figure>-->
-<!--              <h3 class="font-size-20 text-black">Ricky Fisher</h3>-->
-<!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Dentist</span>-->
-<!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem, laudantium, illum minus numquam voluptas?</p>-->
-<!--              <div class="block-social-1">-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
-<!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
         </div>
+
+        <!--          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">-->
+        <!--            <div class="block-team-member-1 text-center rounded">-->
+        <!--              <figure>-->
+        <!--                <img src="images/doc_person_3.jpg" alt="Image" class="img-fluid rounded-circle">-->
+        <!--              </figure>-->
+        <!--              <h3 class="font-size-20 text-black">Ricky Fisher</h3>-->
+        <!--              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Dentist</span>-->
+        <!--              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem, laudantium, illum minus numquam voluptas?</p>-->
+        <!--              <div class="block-social-1">-->
+        <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-facebook"></span></a>-->
+        <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-twitter"></span></a>-->
+        <!--                <a href="#" class="btn border-w-2 rounded primary-primary-outline&#45;&#45;hover"><span class="icon-instagram"></span></a>-->
+        <!--              </div>-->
+        <!--            </div>-->
+        <!--          </div>-->
       </div>
     </div>
-
-<!--    <div class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">-->
-<!--      <div class="container">-->
-<!--        -->
-<!--        <div class="text-center mb-5">-->
-<!--          <div class="block-heading-1">-->
-<!--            <span>Happy Client sagt</span>-->
-<!--            <h2>Testimonial</h2>-->
-<!--          </div>-->
-<!--        </div>-->
-
-<!--        <div class="owl-carousel nonloop-block-13">-->
-<!--          <div>-->
-<!--            <div class="block-testimony-1 text-center">-->
-<!--              -->
-<!--              <blockquote class="mb-4">-->
-<!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
-<!--              </blockquote>-->
-
-<!--              <figure>-->
-<!--                <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
-<!--              </figure>-->
-<!--              <h3 class="font-size-20 text-black">Ricky Fisher</h3>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div>-->
-<!--            <div class="block-testimony-1 text-center">-->
-<!--              <blockquote class="mb-4">-->
-<!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
-<!--              </blockquote>-->
-
-<!--              <figure>-->
-<!--                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
-<!--              </figure>-->
-<!--              <h3 class="font-size-20 text-black">Ken Davis</h3>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div>-->
-<!--            <div class="block-testimony-1 text-center">-->
-<!--              <blockquote class="mb-4">-->
-<!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
-<!--              </blockquote>-->
-
-<!--              <figure>-->
-<!--                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
-<!--              </figure>-->
-<!--              <h3 class="font-size-20 text-black">Mellisa Griffin</h3>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          <div>-->
-<!--            <div class="block-testimony-1 text-center">-->
-<!--              <blockquote class="mb-4">-->
-<!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
-<!--              </blockquote>-->
-
-<!--              <figure>-->
-<!--                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
-<!--              </figure>-->
-<!--              <h3 class="font-size-20 text-black">Robert Steward</h3>-->
-<!--            </div>-->
-<!--          </div>-->
-
-
-<!--        </div>-->
-
-<!--      </div>-->
-<!--    </div>-->
-
-
-    <div class="site-section bg-light" id="contact-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <div class="block-heading-1">
-              <span>Get In Touch</span>
-              <h2>Contact</h2>
-            </div> Zahnarztpraxis Zahn Zone <p> Address: Mühlbaurstraße 36, 81677, München<p>Telephone:089/479646<p>Email     <p> Website: www.zahn-zone.de
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 mb-5">
-            <form action="#" method="post">
-              <div class="form-group row">
-                <div class="col-md-6 mb-4 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First Name">
-                </div>
-                <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email Adress">
-                </div>
-              </div>
-
-              <div class="form-group row">
-                <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Kindly write your request..." cols="30" rows="10"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-md-6 ml-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-4 ml-auto">
-            <h2 class="text-black">Opening Hours</h2>
-
-            <p> Montag 08:00–18:00 <p> Dienstag 08:00–18:00 <p> Mittwoch 08:00–18:00 <p> Donnerstag 08:00–18:00 <p> Freitag 08:00–14:00 <p> Samstag Nach vereinbarung <p> Sonntag Geschlossen.
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <a href="https://www.doctolib.de/zahnarztpraxis/muenchen/zahnaerzte-dr-eltair-dr-sochurek?utm_campaign=website-button&amp;utm_source=zahnaerzte-dr-eltair-dr-sochurek-website-button&amp;utm_medium=referral&amp;utm_content=option-3&amp;utm_term=zahnaerzte-dr-eltair-dr-sochurek" style="display:block;text-align:center;background-color:#0596DE;color:#ffffff;font-size:14px;overflow:hidden;width:196px;height:77px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;position:fixed;top:0;right:5px;z-index:1000" target="_blank" data-reactroot=""><span style="font-size:23px;margin-top:10px;display:block">Termin buchen</span><span style="fon-size:14px"></span><img style="height:15px;margin-bottom:3px;margin-left:0;vertical-align:middle;width:auto" src="https://pro.doctolib.de/external_button/doctolib-white-transparent.png" alt="Doctolib"/></a>
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About us</h2>
-                <p>Address: Mühlbaurstraße 36, 81677, Munich</p>
-                <p>Telephone: 089/479646</p>
-              </div>
-              <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
-                <ul class="list-unstyled">
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Treatments</a></li>
-<!--                  <li><a href="#">Testimonials</a></li>-->
-                  <li><a href="#">Contact</a></li>
-                  <li><a href="Datenschutzerklaerung.html">Data Privacy</a></li>
-                  <li><a href="Impressum.html">Disclaimer</a></li>
-                </ul>
-              </div>
-              <!-- <div class="col-md-3">
-                
-              </div> -->
-            </div>
-          </div>
-          <div class="col-md-4 ml-auto">
-
-              <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-            </form>
-          </div>
-        </div>
-<!--        <div class="row pt-5 mt-5 text-center">-->
-<!--          <div class="col-md-12">-->
-<!--            <div class="border-top pt-5">-->
-<!--            <p>-->
-<!--            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
-<!--            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>-->
-<!--            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
-<!--            </p>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          -->
-<!--        </div>-->
-      </div>
-    </footer>
-
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/aos.js"></script>
+  <!--    <div class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">-->
+  <!--      <div class="container">-->
+  <!--        -->
+  <!--        <div class="text-center mb-5">-->
+  <!--          <div class="block-heading-1">-->
+  <!--            <span>Happy Client sagt</span>-->
+  <!--            <h2>Testimonial</h2>-->
+  <!--          </div>-->
+  <!--        </div>-->
 
-  <script src="js/main.js"></script>
-    
-  </body>
+  <!--        <div class="owl-carousel nonloop-block-13">-->
+  <!--          <div>-->
+  <!--            <div class="block-testimony-1 text-center">-->
+  <!--              -->
+  <!--              <blockquote class="mb-4">-->
+  <!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
+  <!--              </blockquote>-->
+
+  <!--              <figure>-->
+  <!--                <img src="images/person_4.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
+  <!--              </figure>-->
+  <!--              <h3 class="font-size-20 text-black">Ricky Fisher</h3>-->
+  <!--            </div>-->
+  <!--          </div>-->
+
+  <!--          <div>-->
+  <!--            <div class="block-testimony-1 text-center">-->
+  <!--              <blockquote class="mb-4">-->
+  <!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
+  <!--              </blockquote>-->
+
+  <!--              <figure>-->
+  <!--                <img src="images/person_2.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
+  <!--              </figure>-->
+  <!--              <h3 class="font-size-20 text-black">Ken Davis</h3>-->
+  <!--            </div>-->
+  <!--          </div>-->
+
+  <!--          <div>-->
+  <!--            <div class="block-testimony-1 text-center">-->
+  <!--              <blockquote class="mb-4">-->
+  <!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
+  <!--              </blockquote>-->
+
+  <!--              <figure>-->
+  <!--                <img src="images/person_1.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
+  <!--              </figure>-->
+  <!--              <h3 class="font-size-20 text-black">Mellisa Griffin</h3>-->
+  <!--            </div>-->
+  <!--          </div>-->
+
+  <!--          <div>-->
+  <!--            <div class="block-testimony-1 text-center">-->
+  <!--              <blockquote class="mb-4">-->
+  <!--                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>-->
+  <!--              </blockquote>-->
+
+  <!--              <figure>-->
+  <!--                <img src="images/person_3.jpg" alt="Image" class="img-fluid rounded-circle mx-auto">-->
+  <!--              </figure>-->
+  <!--              <h3 class="font-size-20 text-black">Robert Steward</h3>-->
+  <!--            </div>-->
+  <!--          </div>-->
+
+
+  <!--        </div>-->
+
+  <!--      </div>-->
+  <!--    </div>-->
+
+
+  <div class="site-section bg-light" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <div class="block-heading-1">
+            <span>Get In Touch</span>
+            <h2>Contact</h2>
+          </div> Zahnarztpraxis Zahn Zone <p> Address: Mühlbaurstraße 36, 81677, München<p>Telefon:089/479646<p>Email     <p> Website: www.zahn-zone.de
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 mb-5">
+          <form action="#" method="post">
+            <div class="form-group row">
+              <div class="col-md-6 mb-4 mb-lg-0">
+                <input type="text" class="form-control" placeholder="Vorname">
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nachname">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Email Adresse">
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea name="" id="" class="form-control" placeholder="Schreiben Sie Ihre Nachricht." cols="30" rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6 ml-auto">
+                <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4 ml-auto">
+          <h2 class="text-black">Öffnungszeiten</h2>
+
+          <p> Montag 08:00–18:00 <p> Dienstag 08:00–18:00 <p> Mittwoch 08:00–18:00 <p> Donnerstag 08:00–18:00 <p> Freitag 08:00–14:00 <p> Samstag Nach vereinbarung <p> Sonntag Geschlossen.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <a href="https://www.doctolib.de/zahnarztpraxis/muenchen/zahnaerzte-dr-eltair-dr-sochurek?utm_campaign=website-button&amp;utm_source=zahnaerzte-dr-eltair-dr-sochurek-website-button&amp;utm_medium=referral&amp;utm_content=option-3&amp;utm_term=zahnaerzte-dr-eltair-dr-sochurek" style="display:block;text-align:center;background-color:#0596DE;color:#ffffff;font-size:14px;overflow:hidden;width:196px;height:73px;border-bottom-right-radius:4px;border-bottom-left-radius:4px;position:fixed;bottom:0;right:5px;z-index:1000" target="_blank" data-reactroot=""><span style="font-size:23px;margin-top:10px;display:block">Termin buchen</span><span style="fon-size:14px"></span><img style="height:15px;margin-bottom:3px;margin-left:0;vertical-align:middle;width:auto" src="https://pro.doctolib.de/external_button/doctolib-white-transparent.png" alt="Doctolib"/></a>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-5">
+              <h2 class="footer-heading mb-4">Über uns</h2>
+              <p>Address: Mühlbaurstraße 36, 81677, München</p>
+              <p>Telefon: 089/479646</p>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <h2 class="footer-heading mb-4">Features</h2>
+              <ul class="list-unstyled">
+                <li><a href="#">Über uns</a></li>
+                <li><a href="#">Leistungen</a></li>
+                <!--                  <li><a href="#">Testimonials</a></li>-->
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="Datenschutzerklaerung.html">Datenschutzerklärung</a></li>
+                <li><a href="Impressum.html">Impressum</a></li>
+              </ul>
+            </div>
+            <!-- <div class="col-md-3">
+
+            </div> -->
+          </div>
+        </div>
+        <!--          <div class="col-md-4 ml-auto">-->
+
+        <!--              <h2 class="footer-heading mb-4">Follow Us</h2>-->
+        <!--                <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>-->
+        <!--                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>-->
+        <!--                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>-->
+        <!--                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>-->
+        <!--          </div>-->
+      </div>
+      <!--        <div class="row pt-5 mt-5 text-center">-->
+      <!--          <div class="col-md-12">-->
+      <!--            <div class="border-top pt-5">-->
+      <!--            <p>-->
+      <!--            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+      <!--            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>-->
+      <!--            &lt;!&ndash; Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. &ndash;&gt;-->
+      <!--            </p>-->
+      <!--            </div>-->
+      <!--          </div>-->
+      <!--          -->
+      <!--        </div>-->
+    </div>
+  </footer>
+
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/aos.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
 </html>
