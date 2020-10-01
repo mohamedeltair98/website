@@ -22,11 +22,75 @@
   <link rel="stylesheet" href="css/aos.css">
 
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .switch-lang {
+      width: 110px;
+      text-align: left;
+      cursor: pointer;
+      z-index: 50;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    .switch-lang:hover .lang-dropdown {
+      display: block;
+    }
+    .switcher-link {
+      color: #fff;
+    }
+    .switcher-link:hover {
+      color: #fff;
+    }
+    .current-lang {
+      background: #34495e;
+      padding: 3px 5px 0px 5px;
+      border-radius: 5px;
+    }
+    .lang-flag {
+      width: 20px;
+      display: inline-block;
+    }
+    .lang-text {
+      display: inline-block;
+      margin-left: 5px;
+      vertical-align: top;
+      margin-top: 2px;
+    }
+    .lang-dropdown {
+      display: none;
+      background: #34495e;
+      border-radius: 5px;
+      margin-top: 2px;
+    }
+    .selecting-lang {
+      padding: 3px 5px 3px 5px;
+      cursor: pointer;
+    }
+    .selecting-lang:hover {
+      background: #22313f;
+    }
+    ul > :first-child {
+      border-radius: 5px 5px 0px 0px;
+    }
+    ul > :last-child {
+      border-radius: 0px 0px 5px 5px;
+    }
+    li {
+      list-style-type: none;
+    }
+    .menu-arrow {
+      display: inline-block;
+      width: 10px;
+      margin-left: 10px;
+      vertical-align: top;
+      margin-top: 6px;
+    }
+  </style>
 
 </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
   
-  <div class="site-wrap"  id="home-section">
+  <div class="site-wrap"  id="impressum">
 
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
@@ -36,8 +100,7 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-   
-      
+
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
 
       <div class="container">
@@ -47,29 +110,41 @@
           <div class="site-logo">
             <a href="index.html" class="text-black"><span class="text-primary">Zahn-</span>Zone</a>
           </div>
-            
-            <div class="col-12">
 
-              <nav class="site-navigation text-center " role="navigation">
+          <div class="col-12">
+            <nav class="site-navigation text-center " role="navigation">
 
-                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                  <li><a href="#home-section" class="nav-link">Home</a></li>
-                  <li><a href="#services-section" class="nav-link">Leistungen</a></li>
-                  <li><a href="#about-section" class="nav-link">Über uns</a></li>
-                  <li><a href="#team-section" class="nav-link">Team</a></li>
+              <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                <li><a href="index.html#home-section" class="nav-link">Home</a></li>
+                <li><a href="index.html#services-section" class="nav-link">Leistungen</a></li>
+                <li><a href="index.html#about-section" class="nav-link">Über uns</a></li>
+                <li><a href="index.html#team-section" class="nav-link">Team</a></li>
+                <li><a href="#impressum" class="nav-link active">Impressum</a></li
+                <!--                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>-->
+                <li><a href="#contact-section" class="nav-link">Kontakt</a></li>
 
-<!--                  <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>-->
-                  <li><a href="index.html#impressum" class="nav-link active">Impressum</a></li>
-                  <li><a href="#contact-section" class="nav-link">Kontakt</a></li>
-                </ul>
-              </nav>
-            </div>
+                <div class="switch-lang">
+                  <div class="current-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Germany.png"/>
+                    <p class="lang-text">Deutsch</p>
+                  </div>
+                  <div class="lang-dropdown">
+<!--                    <div class="selecting-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_Italy.png"/>-->
+<!--                      <p class="lang-text">Italiano</p>-->
+<!--                    </div>-->
+                    <div class="selecting-lang"><img class="lang-flag" src="https://cdn2.iconfinder.com/data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>
+                      <p class="lang-text">English</p>
+                  </div>
+                </div>
+              </ul>
+            </nav>
+
+          </div>
 
           <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
         </div>
       </div>
-      
+
     </header>
     
 
