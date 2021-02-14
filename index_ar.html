@@ -101,6 +101,24 @@
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>اعزائي المرضي،</p>
+                <br />
+                <p>نحيطكم علما بأن عيادتنا مغلقة من يوم الاتنين الموافق ١٥/٠٢/٢٠٢١ حتي الأربعاء  الموافق ١٧/٠٢/٢٠٢١.</p>
+                <br />
+                <p>كارل زوخرك<br />
+                    د.محمد الطير</p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="site-wrap"  id="home-section">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -543,6 +561,12 @@
 <script src="js/aos.js"></script>
 
 <script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
 
 </body>
 </html>
